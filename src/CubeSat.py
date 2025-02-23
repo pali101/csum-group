@@ -32,6 +32,7 @@ class CubeSat:
             hashlib.sha256(expected_token.encode()).hexdigest(), self.token
         ):
             self.token = expected_token
+            print(f"[{expected_token[:10]}...] Update verified and accepted.")
             # print("Software update is verified")
         else:
             print("Software update is not verified")
