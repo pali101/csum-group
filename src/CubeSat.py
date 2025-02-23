@@ -48,3 +48,21 @@ class CubeSat:
 
         # broadcast transmission_token and software_update
         return software_update, transmission_token
+
+    def receive_broadcast_update(self, software_update, transmission_token):
+        """Verify and accept broadcasted update from another CubeSat."""
+        # Compute expected HMAC to verify authenticity
+        hmac_obj = hmac.new(
+            self.shared_CubeSat_secret.encode(),
+            software_update.encode(),
+            hashlib.sha256,
+        )
+        expected_token = hmac_obj.hexdigest()
+
+        # Check if the received token matches the expected token
+        if hmac.compare_digest(expected_token, transmission_token):
+            print(f"[{transmission_token[:10]}...] Update verified and accepted.")
+        else:
+            print(
+                f"[{transmission_token[:10]}...] WARNING: Update verification failed!"
+            )
