@@ -32,7 +32,7 @@ class CubeSat:
             hashlib.sha256(expected_token.encode()).hexdigest(), self.token
         ):
             self.token = expected_token
-            print(f"[{expected_token[:10]}...] Update verified and accepted.")
+            # print(f"[{expected_token[:10]}...] Update verified and accepted.")
             # print("Software update is verified")
         else:
             print("Software update is not verified")
@@ -62,7 +62,8 @@ class CubeSat:
 
         # Check if the received token matches the expected token
         if hmac.compare_digest(expected_token, transmission_token):
-            print(f"[{transmission_token[:10]}...] Update verified and accepted.")
+            # print(f"[{transmission_token[:10]}...] Update verified and accepted.")
+            pass
         else:
             print(
                 f"[{transmission_token[:10]}...] WARNING: Update verification failed!"
