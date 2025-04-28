@@ -58,7 +58,7 @@ class CubeSat:
     ):
         """Verify and accept broadcasted update from another CubeSat."""
         # Check timestamp validity
-        if ts >= time.time():
+        if ts < time.time():
             raise ValueError("Token expired")
 
         message = f"{software_update}|{idsen}|{self.id}|{ts}"
