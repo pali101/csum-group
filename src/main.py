@@ -17,7 +17,10 @@ def main():
 
     # Initialize CubeSats with their unique last token from their hashchain
     initial_tokens = [chain[-1] for chain in hashchains]
-    cubesats = [CubeSat(token, shared_secret) for token in initial_tokens]
+    # cubesats = [CubeSat(token, shared_secret) for token in initial_tokens]
+    cubesats = []
+    for idx, token in enumerate(initial_tokens):
+        cubesats.append(CubeSat(token, shared_secret, id=idx + 1))
 
     software_update = "Critical firmware patch v1.3"
 
@@ -36,43 +39,21 @@ def main():
 
     # CubeSat1 broadcasts the update to other CubeSats
     print("\n📡 [CubeSat1] Broadcasting update to other CubeSats...")
-    broadcasted_update, broadcasted_token = cubesats[0].broadcast_update(
-        software_update
-    )
+    # broadcasted_update, broadcasted_token = cubesats[0].broadcast_update(
+    #     software_update
+    # )
 
     # Each CubeSat verifies and logs the result
     for i in range(1, num_cubesats):
+        broadcasted_update, broadcasted_token, sender_id, receiver_id, ts = cubesats[
+            0
+        ].broadcast_update(software_update, idrec=cubesats[i].id)
         print(f"\n🔍 [CubeSat{i+1}] Verifying broadcasted update...")
-        cubesats[i].receive_broadcast_update(broadcasted_update, broadcasted_token)
+        cubesats[i].receive_broadcast_update(
+            broadcasted_update, broadcasted_token, idsen=sender_id, ts=ts
+        )
 
     print("\nAll software updates processed successfully! 🚀")
-
-    # # Number of software updates to simulate
-    # num_updates = 10
-
-    # # Send multiple software updates to the CubeSat
-    # for i in range(1, num_updates + 1):
-    #     # Set the ground station's tokens for this iteration
-    #     ground_station.current_token = hashchain1[-(i + 1)]
-    #     ground_station.previous_token = hashchain1[-i]
-
-    #     # Print a separator for clarity
-    #     print(f"--- Sending Software Update {i} ---")
-
-    #     # Generate a new software update message for each iteration
-    #     software_update = f"CubeSat software update {i}"
-
-    #     transmission_token = ground_station.send_update(software_update)
-    #     # print("transmission_token", transmission_token)
-
-    #     # Receive the software update from the ground station
-    #     if i == 1:
-    #         cubesat1.receive_update(software_update, transmission_token, True)
-    #     else:
-    #         cubesat1.receive_update(software_update, transmission_token, False)
-    #     print()
-
-    # print("All software updates processed.")
 
 
 main()
