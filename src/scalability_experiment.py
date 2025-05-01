@@ -25,15 +25,19 @@ def build_structured_topology(num_planes, sats_per_plane):
     return G
 
 
-def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
+def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], updates=5):
     results = {}
-    for num_cubesats in cubesat_counts:
+    for num_planes, sats_per_plane in topology_configs:
+        num_cubesats = num_planes * sats_per_plane
+        print(
+            f"\nRunning experiment for {num_planes}x{sats_per_plane} = {num_cubesats} CubeSats"
+        )
         experiment_data = {
             "timestamp": datetime.now().isoformat(),
             "node_count": num_cubesats,
             "update_rounds": updates,
             "latency_model": "random_1_10ms_with_10_percent_packet_drop",
-            "topology_type": "erdos_renyi_connected",
+            "topology_type": f"structured_{num_planes}x{sats_per_plane}",
             "edges": [],
             "nodes": {},
             "events": [],
@@ -54,7 +58,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
             cubesats.append(cs)
 
         # Create a connected random graph
-        G = build_structured_topology(num_planes=6, sats_per_plane=8)
+        G = build_structured_topology(num_planes, sats_per_plane)
         experiment_data["edges"] = list(G.edges())
         for node in G.nodes():
             experiment_data["nodes"][node] = {
@@ -182,4 +186,6 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
 
 
 if __name__ == "__main__":
-    scalability_experiment()
+    scalability_experiment(
+        [(2, 3), (3, 4), (4, 5), (6, 8), (10, 10), (12, 12), (15, 15)]
+    )
