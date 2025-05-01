@@ -2,10 +2,13 @@ import hashlib, hmac, time
 
 
 class CubeSat:
-    def __init__(self, initial_token, shared_secret, id):
+    _counter = 0
+
+    def __init__(self, initial_token, shared_secret):
         self.token = initial_token
         self.shared_cluster_secret = shared_secret
-        self.id = id
+        self.id = CubeSat._counter
+        CubeSat._counter += 1
 
     def xor_strings(self, s1, s2):
         """XOR two strings and return the result as a string."""
