@@ -8,6 +8,23 @@ import os
 from datetime import datetime
 
 
+def build_structured_topology(num_planes, sats_per_plane):
+    G = nx.Graph()
+    for plane in range(num_planes):
+        for sat in range(sats_per_plane):
+            node = plane * sats_per_plane + sat
+            G.add_node(node)
+
+            # Intra-plane connections (ring)
+            next_sat = (sat + 1) % sats_per_plane
+            G.add_edge(node, plane * sats_per_plane + next_sat)
+
+            # Inter-plane connections
+            next_plane = (plane + 1) % num_planes
+            G.add_edge(node, next_plane * sats_per_plane + sat)
+    return G
+
+
 def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
     results = {}
     for num_cubesats in cubesat_counts:
@@ -37,9 +54,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
             cubesats.append(cs)
 
         # Create a connected random graph
-        G = nx.erdos_renyi_graph(n=num_cubesats, p=0.2)
-        while not nx.is_connected(G):
-            G = nx.erdos_renyi_graph(n=num_cubesats, p=0.2)
+        G = build_structured_topology(num_planes=6, sats_per_plane=8)
         experiment_data["edges"] = list(G.edges())
         for node in G.nodes():
             experiment_data["nodes"][node] = {
