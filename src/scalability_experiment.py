@@ -52,6 +52,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
         version = 1.3
 
         for update_idx in range(updates):
+            max_retries = 3
             # Reset per-update state
             for node_id in experiment_data["nodes"]:
                 experiment_data["nodes"][node_id]["update_history"].append(
@@ -78,9 +79,6 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                     for neighbor_id in G.neighbors(sender_id):
                         receiver = cubesats[neighbor_id]
 
-                        latency = random.uniform(0.001, 0.010)
-                        time.sleep(latency)  # Simulate 1-10ms dynamic latency
-
                         if (
                             hashlib.sha256(software_update.encode()).hexdigest()
                             in receiver.update_log
@@ -93,24 +91,35 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                         )
 
                         # Step 5: Receiver verifies and may rebroadcast
-                        # Simulate packet drop with 10% probability
-                        if random.random() < 0.1:
-                            token_func = None  # packet dropped
-                        else:
-                            token_func = receiver.receive_broadcast_update(
-                                update, token, sid, ts
+                        retry_count = 0
+                        token_func = None
+
+                        while retry_count < max_retries:
+                            latency = random.uniform(0.001, 0.010)
+                            time.sleep(latency)  # Simulate 1-10ms dynamic latency
+                            # Simulate packet drop with 10% probability
+                            if random.random() < 0.1:
+                                token_func = None  # packet dropped
+                            else:
+                                token_func = receiver.receive_broadcast_update(
+                                    update, token, sid, ts
+                                )
+                            # Log each attempt
+                            experiment_data["events"].append(
+                                {
+                                    "timestamp": time.time(),
+                                    "sender": sender_id,
+                                    "receiver": neighbor_id,
+                                    "latency": latency,
+                                    "token_valid": token_func is not None,
+                                    "version": f"{version:.1f}",
+                                    "retry": retry_count,
+                                }
                             )
 
-                        experiment_data["events"].append(
-                            {
-                                "timestamp": time.time(),
-                                "sender": sender_id,
-                                "receiver": neighbor_id,
-                                "latency": latency,
-                                "token_valid": token_func is not None,
-                                "version": f"{version:.1f}",
-                            }
-                        )
+                            if token_func:
+                                break
+                            retry_count += 1
 
                         if token_func:
                             sender_hops = experiment_data["nodes"][sender_id][
