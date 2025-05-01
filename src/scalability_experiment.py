@@ -1,4 +1,4 @@
-import time, hashlib
+import time, hashlib, random
 import networkx as nx
 from CubeSat import CubeSat
 from GroundStation import GroundStation
@@ -8,14 +8,14 @@ import os
 from datetime import datetime
 
 
-def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], updates=5):
+def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
     results = {}
     for num_cubesats in cubesat_counts:
         experiment_data = {
             "timestamp": datetime.now().isoformat(),
             "node_count": num_cubesats,
             "update_rounds": updates,
-            "latency_model": "random_1_10ms",
+            "latency_model": "random_1_10ms_with_10_percent_packet_drop",
             "topology_type": "erdos_renyi_connected",
             "edges": [],
             "nodes": {},
@@ -71,7 +71,6 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], update
                     sender = cubesats[sender_id]
                     for neighbor_id in G.neighbors(sender_id):
                         receiver = cubesats[neighbor_id]
-                        import random
 
                         latency = random.uniform(0.001, 0.010)
                         time.sleep(latency)  # Simulate 1-10ms dynamic latency
@@ -87,9 +86,13 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], update
                         )
 
                         # Step 5: Receiver verifies and may rebroadcast
-                        token_func = receiver.receive_broadcast_update(
-                            update, token, sid, ts
-                        )
+                        # Simulate packet drop with 10% probability
+                        if random.random() < 0.1:
+                            token_func = None  # packet dropped
+                        else:
+                            token_func = receiver.receive_broadcast_update(
+                                update, token, sid, ts
+                            )
 
                         experiment_data["events"].append(
                             {
