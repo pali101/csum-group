@@ -47,11 +47,12 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                 "update_history": [],
             }
 
-        software_update = "Firmware update v1.3"
         total_time = 0
-        version = 1.3
 
         for update_idx in range(updates):
+            # Set version and software update string BEFORE sending
+            version = 1.3 + update_idx * 0.1
+            software_update = f"Firmware update v{version:.1f}"
             max_retries = 3
             # Reset per-update state
             for node_id in experiment_data["nodes"]:
@@ -145,10 +146,6 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
             experiment_data["successful_nodes_per_round"].append(
                 successful_nodes_this_round
             )
-
-            # Update version
-            version = 1.3 + update_idx * 0.1
-            software_update = f"Firmware update v{version:.1f}"
 
             end = time.time()
             total_time += end - start
