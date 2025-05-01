@@ -9,6 +9,7 @@ class CubeSat:
         self.shared_cluster_secret = shared_secret
         self.id = CubeSat._counter
         CubeSat._counter += 1
+        self.update_log = set()
 
     def xor_strings(self, s1, s2):
         """XOR two strings and return the result as a string."""
@@ -60,6 +61,12 @@ class CubeSat:
         self, software_update, authenticated_update_token, idsen, ts
     ):
         """Verify and accept broadcasted update from another CubeSat."""
+
+        # Check if update is already received
+        update_hash = hashlib.sha256(software_update.encode()).hexdigest()
+        if update_hash in self.update_log:
+            return None
+
         # Check timestamp validity
         if ts < time.time():
             raise ValueError("Token expired")
@@ -76,8 +83,26 @@ class CubeSat:
         # Check if the received token matches the expected token
         if hmac.compare_digest(expected_token, authenticated_update_token):
             # print(f"[{authenticated_update_token[:10]}...] Update verified and accepted.")
-            pass
+            self.update_log.add(update_hash)
+            new_ts = int(time.time()) + 5
+
+            def create_token_for(receiver_id):
+                msg = f"{software_update}|{self.id}|{receiver_id}|{new_ts}"
+                hmac_obj = hmac.new(
+                    self.shared_cluster_secret.encode(), msg.encode(), hashlib.sha256
+                )
+                return (
+                    software_update,
+                    hmac_obj.hexdigest(),
+                    self.id,
+                    receiver_id,
+                    new_ts,
+                )
+
+            return create_token_for
+
         else:
             print(
                 f"[{authenticated_update_token[:10]}...] WARNING: Update verification failed!"
             )
+            return None
