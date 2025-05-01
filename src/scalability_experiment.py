@@ -50,6 +50,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
 
         software_update = "Firmware update v1.3"
         total_time = 0
+        version = 1.3
 
         for update_idx in range(updates):
             ground_station.current_token = hashchain[-(update_idx + 2)]
@@ -101,6 +102,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                                 "receiver": neighbor_id,
                                 "latency": latency,
                                 "token_valid": token_func is not None,
+                                "version": f"{version:.1f}",
                             }
                         )
 
