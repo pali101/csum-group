@@ -118,6 +118,9 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                         if token_func:
                             next_queue.append(neighbor_id)
                 queue = next_queue
+                # Update version
+            version = 1.3 + update_idx * 0.1
+            software_update = f"Firmware update v{version:.1f}"
 
             end = time.time()
             total_time += end - start
