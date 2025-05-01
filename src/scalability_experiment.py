@@ -1,13 +1,26 @@
-# scalability_experiment.py
-import time, hashlib, random
+import time, hashlib
 import networkx as nx
 from CubeSat import CubeSat
 from GroundStation import GroundStation
+
+import json
+import os
+from datetime import datetime
 
 
 def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], updates=5):
     results = {}
     for num_cubesats in cubesat_counts:
+        experiment_data = {
+            "timestamp": datetime.now().isoformat(),
+            "node_count": num_cubesats,
+            "update_rounds": updates,
+            "latency_model": "random_1_10ms",
+            "topology_type": "erdos_renyi_connected",
+            "edges": [],
+            "nodes": {},
+            "events": [],
+        }
         ground_station = GroundStation("GS")
         shared_secret = ground_station.generate_random_token(32)
 
@@ -26,6 +39,14 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], update
         G = nx.erdos_renyi_graph(n=num_cubesats, p=0.2)
         while not nx.is_connected(G):
             G = nx.erdos_renyi_graph(n=num_cubesats, p=0.2)
+        experiment_data["edges"] = list(G.edges())
+        for node in G.nodes():
+            experiment_data["nodes"][node] = {
+                "neighbors": list(G.neighbors(node)),
+                "received": False,
+                "time_received": None,
+                "hops": None,
+            }
 
         software_update = "Firmware update v1.3"
         total_time = 0
@@ -35,13 +56,14 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], update
             ground_station.previous_token = hashchain[-(update_idx + 1)]
             transmission_token = ground_station.send_update(software_update)
 
-            # One CubeSat receives update and stores it
+            # Step 1 & 2: One CubeSat receives update and stores it
             cubesats[0].receive_update(software_update, transmission_token)
 
-            # Begin propagation from the initial CubeSat
+            # Step 3 to 5: Begin propagation from the initial CubeSat
             visited = set()
             queue = [0]
             start = time.time()
+            experiment_data["start_time"] = start
 
             while queue:
                 next_queue = []
@@ -49,40 +71,71 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100, 200, 500], update
                     sender = cubesats[sender_id]
                     for neighbor_id in G.neighbors(sender_id):
                         receiver = cubesats[neighbor_id]
-                        # simulate 1-10ms dynamic delay
-                        time.sleep(random.uniform(0.001, 0.010))
+                        import random
+
+                        latency = random.uniform(0.001, 0.010)
+                        time.sleep(latency)  # Simulate 1-10ms dynamic latency
                         if (
                             hashlib.sha256(software_update.encode()).hexdigest()
                             in receiver.update_log
                         ):
                             continue  # Step 4: Already received
 
-                        # Create and send token
+                        # Step 3: Create and send token
                         update, token, sid, rid, ts = sender.broadcast_update(
                             software_update, neighbor_id
                         )
 
-                        # Receiver verifies and may rebroadcast
+                        # Step 5: Receiver verifies and may rebroadcast
                         token_func = receiver.receive_broadcast_update(
                             update, token, sid, ts
                         )
+
+                        experiment_data["events"].append(
+                            {
+                                "timestamp": time.time(),
+                                "sender": sender_id,
+                                "receiver": neighbor_id,
+                                "latency": latency,
+                                "token_valid": token_func is not None,
+                            }
+                        )
+
+                        if token_func:
+                            experiment_data["nodes"][neighbor_id]["received"] = True
+                            experiment_data["nodes"][neighbor_id]["time_received"] = (
+                                time.time() - start
+                            )
+                            experiment_data["nodes"][neighbor_id]["hops"] = (
+                                experiment_data["nodes"][sender_id]["hops"] + 1
+                                if experiment_data["nodes"][sender_id]["hops"]
+                                is not None
+                                else 1
+                            )
                         if token_func:
                             next_queue.append(neighbor_id)
                 queue = next_queue
-            # Update version
-            version = 1.3 + update_idx * 0.1
-            software_update = f"Firmware update v{version:.1f}"
 
             end = time.time()
             total_time += end - start
 
         avg_time_per_update = total_time / updates
         results[num_cubesats] = avg_time_per_update
-        print(
-            f"{num_cubesats} CubeSats: Avg propagation time: {avg_time_per_update:.6f} sec"
+        experiment_data["avg_propagation_time"] = avg_time_per_update
+        experiment_data["successful_nodes"] = sum(
+            1 for n in experiment_data["nodes"].values() if n["received"]
         )
 
-    print("\nFinal scalability results:", results)
+        output_dir = f"results/exp_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{num_cubesats}nodes"
+        os.makedirs(output_dir, exist_ok=True)
+        with open(os.path.join(output_dir, "experiment_data.json"), "w") as f:
+            json.dump(experiment_data, f, indent=2)
+
+        print(
+            f"{num_cubesats} CubeSats: Avg propagation time: {avg_time_per_update:.6f} sec. Data saved to {output_dir}"
+        )
+
+    print("Final scalability results:", results)
 
 
 if __name__ == "__main__":
