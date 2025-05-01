@@ -20,6 +20,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
             "edges": [],
             "nodes": {},
             "events": [],
+            "successful_nodes_per_round": [],
         }
         ground_station = GroundStation("GS")
         shared_secret = ground_station.generate_random_token(32)
@@ -43,9 +44,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
         for node in G.nodes():
             experiment_data["nodes"][node] = {
                 "neighbors": list(G.neighbors(node)),
-                "received": False,
-                "time_received": None,
-                "hops": None,
+                "update_history": [],
             }
 
         software_update = "Firmware update v1.3"
@@ -53,6 +52,12 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
         version = 1.3
 
         for update_idx in range(updates):
+            # Reset per-update state
+            for node_id in experiment_data["nodes"]:
+                experiment_data["nodes"][node_id]["update_history"].append(
+                    {"received": False, "time_received": None, "hops": None}
+                )
+
             ground_station.current_token = hashchain[-(update_idx + 2)]
             ground_station.previous_token = hashchain[-(update_idx + 1)]
             transmission_token = ground_station.send_update(software_update)
@@ -75,6 +80,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
 
                         latency = random.uniform(0.001, 0.010)
                         time.sleep(latency)  # Simulate 1-10ms dynamic latency
+
                         if (
                             hashlib.sha256(software_update.encode()).hexdigest()
                             in receiver.update_log
@@ -107,20 +113,31 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                         )
 
                         if token_func:
-                            experiment_data["nodes"][neighbor_id]["received"] = True
-                            experiment_data["nodes"][neighbor_id]["time_received"] = (
-                                time.time() - start
-                            )
-                            experiment_data["nodes"][neighbor_id]["hops"] = (
-                                experiment_data["nodes"][sender_id]["hops"] + 1
-                                if experiment_data["nodes"][sender_id]["hops"]
-                                is not None
-                                else 1
-                            )
-                        if token_func:
+                            sender_hops = experiment_data["nodes"][sender_id][
+                                "update_history"
+                            ][-1]["hops"]
+                            experiment_data["nodes"][neighbor_id]["update_history"][
+                                -1
+                            ] = {
+                                "received": True,
+                                "time_received": time.time() - start,
+                                "hops": (
+                                    (sender_hops + 1) if sender_hops is not None else 1
+                                ),
+                            }
                             next_queue.append(neighbor_id)
                 queue = next_queue
-                # Update version
+
+            successful_nodes_this_round = sum(
+                1
+                for node in experiment_data["nodes"].values()
+                if node["update_history"][-1]["received"]
+            )
+            experiment_data["successful_nodes_per_round"].append(
+                successful_nodes_this_round
+            )
+
+            # Update version
             version = 1.3 + update_idx * 0.1
             software_update = f"Firmware update v{version:.1f}"
 
@@ -130,9 +147,6 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
         avg_time_per_update = total_time / updates
         results[num_cubesats] = avg_time_per_update
         experiment_data["avg_propagation_time"] = avg_time_per_update
-        experiment_data["successful_nodes"] = sum(
-            1 for n in experiment_data["nodes"].values() if n["received"]
-        )
 
         output_dir = f"results/exp_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{num_cubesats}nodes"
         os.makedirs(output_dir, exist_ok=True)
