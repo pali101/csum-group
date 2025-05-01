@@ -96,7 +96,7 @@ def scalability_experiment(cubesat_counts=[5, 10, 20, 50, 100], updates=5):
                         token_func = None
 
                         while retry_count < max_retries:
-                            latency = random.uniform(0.001, 0.010)
+                            latency = max(0, random.normalvariate(0.005, 0.001))
                             time.sleep(latency)  # Simulate 1-10ms dynamic latency
                             # Simulate packet drop with 10% probability
                             if random.random() < 0.1:
