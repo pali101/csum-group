@@ -36,7 +36,7 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
             "timestamp": datetime.now().isoformat(),
             "node_count": num_cubesats,
             "update_rounds": updates,
-            "latency_model": "random_1_10ms_with_10_percent_packet_drop",
+            "latency_model": "normal_5ms_std1_with_10_percent_packet_drop",
             "topology_type": f"structured_{num_planes}x{sats_per_plane}",
             "edges": [],
             "nodes": {},
@@ -117,8 +117,20 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
                         while retry_count < max_retries:
                             latency = max(0, random.normalvariate(0.005, 0.001))
                             time.sleep(latency)  # Simulate 1-10ms dynamic latency
+
+                            # Simulate malicious token with 5 percent probability
+                            is_possibly_malicious = (
+                                random.random() < 0.05 and retry_count == 0
+                            )
+                            if is_possibly_malicious:
+                                fake_token = hashlib.sha256(
+                                    str(random.random()).encode()
+                                ).hexdigest()
+                                token_func = receiver.receive_broadcast_update(
+                                    update, fake_token, sid, ts
+                                )
                             # Simulate packet drop with 10% probability
-                            if random.random() < 0.1:
+                            elif random.random() < 0.1:
                                 token_func = None  # packet dropped
                             else:
                                 token_func = receiver.receive_broadcast_update(
@@ -134,6 +146,7 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
                                     "token_valid": token_func is not None,
                                     "version": f"{version:.1f}",
                                     "retry": retry_count,
+                                    "possibly_malicious": is_possibly_malicious,
                                 }
                             )
 
