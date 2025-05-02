@@ -227,7 +227,6 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
         )
 
         # Redundancy rate
-
         target_counts = Counter(
             (e["receiver"], e["version"]) for e in experiment_data["events"]
         )
@@ -259,5 +258,20 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
 
 if __name__ == "__main__":
     scalability_experiment(
-        [(2, 3), (3, 4), (4, 5), (6, 8), (10, 10), (12, 12), (15, 15)]
+        [
+            (2, 3),
+            (3, 4),
+            (4, 5),
+            (4, 12),
+            (6, 8),
+            (7, 7),
+            (6, 10),
+            (9, 9),
+            (10, 10),
+            (11, 11),
+            (15, 15),
+            (20, 20),
+            (25, 20),
+            (30, 20),
+        ]
     )
