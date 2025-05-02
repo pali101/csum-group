@@ -1,0 +1,634 @@
+{
+  "timestamp": "2025-05-02T12:52:10.493321",
+  "node_count": 6,
+  "update_rounds": 5,
+  "latency_model": "normal_5ms_std1_with_10_percent_link_failure_and_packet_drop",
+  "topology_type": "structured_2x3",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "nodes": {
+    "0": {
+      "neighbors": [
+        1,
+        3,
+        2
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.032141923904418945,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.019452333450317383,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.019367218017578125,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.01996588706970215,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.03277134895324707,
+          "hops": 2
+        }
+      ]
+    },
+    "1": {
+      "neighbors": [
+        0,
+        2,
+        4
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.005677223205566406,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.0048563480377197266,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.003037691116333008,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.004601240158081055,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.003815889358520508,
+          "hops": 1
+        }
+      ]
+    },
+    "3": {
+      "neighbors": [
+        0,
+        4,
+        5
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.011490345001220703,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.008928775787353516,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.008378028869628906,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.010387420654296875,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.008463621139526367,
+          "hops": 1
+        }
+      ]
+    },
+    "2": {
+      "neighbors": [
+        1,
+        0,
+        5
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.021178722381591797,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.012911796569824219,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.013090372085571289,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.014042377471923828,
+          "hops": 1
+        },
+        {
+          "received": true,
+          "time_received": 0.04435586929321289,
+          "hops": 2
+        }
+      ]
+    },
+    "4": {
+      "neighbors": [
+        1,
+        3,
+        5
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.03772568702697754,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.023613452911376953,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.023633241653442383,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.025374412536621094,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.048584938049316406,
+          "hops": 2
+        }
+      ]
+    },
+    "5": {
+      "neighbors": [
+        2,
+        4,
+        3
+      ],
+      "update_history": [
+        {
+          "received": true,
+          "time_received": 0.04407215118408203,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.02813887596130371,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.02840709686279297,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.029087543487548828,
+          "hops": 2
+        },
+        {
+          "received": true,
+          "time_received": 0.0535123348236084,
+          "hops": 2
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "timestamp": 1746170530.5003874,
+      "sender": 0,
+      "receiver": 1,
+      "latency": 0.0055218654946440895,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.506197,
+      "sender": 0,
+      "receiver": 3,
+      "latency": 0.00561809487314896,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5115478,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.005099368214440866,
+      "token_valid": false,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5158887,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.004079535723908724,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 1,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.520936,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.004822324464679414,
+      "token_valid": false,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5268307,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.005617510038914551,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 1,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5324357,
+      "sender": 1,
+      "receiver": 4,
+      "latency": 0.005311446346167351,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5387783,
+      "sender": 3,
+      "receiver": 5,
+      "latency": 0.0061983497459202,
+      "token_valid": true,
+      "version": "1.3",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5437326,
+      "sender": 0,
+      "receiver": 1,
+      "latency": 0.0046977351183573575,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5478048,
+      "sender": 0,
+      "receiver": 3,
+      "latency": 0.003892519936898671,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5517862,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.003774787390058515,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.558315,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.006157941768238475,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.562463,
+      "sender": 1,
+      "receiver": 4,
+      "latency": 0.0038054905165968806,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5670035,
+      "sender": 3,
+      "receiver": 5,
+      "latency": 0.004176005968359796,
+      "token_valid": true,
+      "version": "1.4",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5702589,
+      "sender": 0,
+      "receiver": 1,
+      "latency": 0.00271194338912459,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5755954,
+      "sender": 0,
+      "receiver": 3,
+      "latency": 0.004976079354244023,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5803118,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.0044016659490871595,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5865893,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.005949563298623617,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.5908554,
+      "sender": 1,
+      "receiver": 4,
+      "latency": 0.003985195060168217,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.59563,
+      "sender": 3,
+      "receiver": 5,
+      "latency": 0.004486876594875947,
+      "token_valid": true,
+      "version": "1.5",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.600457,
+      "sender": 0,
+      "receiver": 1,
+      "latency": 0.004261138134233835,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6062489,
+      "sender": 0,
+      "receiver": 3,
+      "latency": 0.005460573684345424,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.60991,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.0034125347937831617,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6158364,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.005740243025532846,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.621246,
+      "sender": 1,
+      "receiver": 4,
+      "latency": 0.005223291325565941,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6249595,
+      "sender": 3,
+      "receiver": 5,
+      "latency": 0.003569536087104019,
+      "token_valid": true,
+      "version": "1.6",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.628932,
+      "sender": 0,
+      "receiver": 1,
+      "latency": 0.0036906601589006007,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6335807,
+      "sender": 0,
+      "receiver": 3,
+      "latency": 0.00453746089873275,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.638769,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.0050760109106575595,
+      "token_valid": false,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6451652,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.006314170716213628,
+      "token_valid": false,
+      "version": "1.7",
+      "retry": 1,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6512825,
+      "sender": 0,
+      "receiver": 2,
+      "latency": 0.006038946597889219,
+      "token_valid": false,
+      "version": "1.7",
+      "retry": 2,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6578884,
+      "sender": 1,
+      "receiver": 0,
+      "latency": 0.006439700403495575,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6644804,
+      "sender": 1,
+      "receiver": 2,
+      "latency": 0.006283055654491815,
+      "token_valid": false,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6694694,
+      "sender": 1,
+      "receiver": 2,
+      "latency": 0.00470978123988082,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 1,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6736872,
+      "sender": 1,
+      "receiver": 4,
+      "latency": 0.004068637747272662,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    },
+    {
+      "timestamp": 1746170530.6786256,
+      "sender": 3,
+      "receiver": 5,
+      "latency": 0.004645460638162863,
+      "token_valid": true,
+      "version": "1.7",
+      "retry": 0,
+      "possibly_malicious": false
+    }
+  ],
+  "successful_nodes_per_round": [
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "disabled_edges": [],
+  "avg_node_degree": 3.0,
+  "graph_diameter": 2,
+  "isolated_nodes": [],
+  "num_isolated": 0,
+  "is_connected": true,
+  "start_time": 1746170530.6251218,
+  "avg_propagation_time": 0.03669929504394531,
+  "unreachable_percent": 0.0,
+  "avg_retries_per_event": 0.16666666666666666,
+  "max_retries": 2,
+  "packet_drop_rate": 16.666666666666668,
+  "redundant_transmissions": 3,
+  "max_propagation_time": 0.0535123348236084
+}
