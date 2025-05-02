@@ -6,6 +6,7 @@ from GroundStation import GroundStation
 import json
 import os
 from datetime import datetime
+from collections import Counter
 
 
 def build_structured_topology(num_planes, sats_per_plane):
@@ -200,6 +201,49 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
         avg_time_per_update = total_time / updates
         results[num_cubesats] = avg_time_per_update
         experiment_data["avg_propagation_time"] = avg_time_per_update
+
+        # Unreachable nodes (%)
+        total_nodes = len(experiment_data["nodes"])
+        unreachable = sum(
+            1
+            for node in experiment_data["nodes"].values()
+            if not node["update_history"][-1]["received"]
+        )
+        experiment_data["unreachable_percent"] = 100 * unreachable / total_nodes
+
+        # Retry stats
+        retries = [e["retry"] for e in experiment_data["events"]]
+        experiment_data["avg_retries_per_event"] = (
+            sum(retries) / len(retries) if retries else 0
+        )
+        experiment_data["max_retries"] = max(retries) if retries else 0
+
+        # Packet drop rate
+        drops = sum(1 for e in experiment_data["events"] if not e["token_valid"])
+        experiment_data["packet_drop_rate"] = (
+            100 * drops / len(experiment_data["events"])
+            if experiment_data["events"]
+            else 0
+        )
+
+        # Redundancy rate
+
+        target_counts = Counter(
+            (e["receiver"], e["version"]) for e in experiment_data["events"]
+        )
+        redundant_attempts = sum(
+            1 for (_, v), count in target_counts.items() if count > 1
+        )
+        experiment_data["redundant_transmissions"] = redundant_attempts
+
+        # Max propagation time
+        times = [
+            h["time_received"]
+            for node in experiment_data["nodes"].values()
+            for h in node["update_history"]
+            if h["time_received"] is not None
+        ]
+        experiment_data["max_propagation_time"] = max(times) if times else 0
 
         output_dir = f"results/exp_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{num_cubesats}nodes"
         os.makedirs(output_dir, exist_ok=True)
