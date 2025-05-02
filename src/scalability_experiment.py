@@ -65,6 +65,16 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
         G.remove_edges_from(failed_links)
         experiment_data["disabled_edges"] = failed_links
         experiment_data["edges"] = list(G.edges())
+
+        experiment_data["avg_node_degree"] = (
+            sum(dict(G.degree()).values()) / G.number_of_nodes()
+        )
+        experiment_data["graph_diameter"] = (
+            nx.diameter(G) if nx.is_connected(G) else None
+        )
+        experiment_data["isolated_nodes"] = [n for n, d in G.degree() if d == 0]
+        experiment_data["num_isolated"] = len(experiment_data["isolated_nodes"])
+        experiment_data["is_connected"] = nx.is_connected(G)
         for node in G.nodes():
             experiment_data["nodes"][node] = {
                 "neighbors": list(G.neighbors(node)),
