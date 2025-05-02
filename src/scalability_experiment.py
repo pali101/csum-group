@@ -36,7 +36,7 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
             "timestamp": datetime.now().isoformat(),
             "node_count": num_cubesats,
             "update_rounds": updates,
-            "latency_model": "normal_5ms_std1_with_10_percent_packet_drop",
+            "latency_model": "normal_5ms_std1_with_10_percent_link_failure_and_packet_drop",
             "topology_type": f"structured_{num_planes}x{sats_per_plane}",
             "edges": [],
             "nodes": {},
@@ -57,8 +57,13 @@ def scalability_experiment(topology_configs=[(6, 8), (10, 10), (12, 12)], update
             cs.id = i  # Force CubeSat.id to match index
             cubesats.append(cs)
 
-        # Create a connected random graph
+        # Create a  graph
         G = build_structured_topology(num_planes, sats_per_plane)
+        total_edges = list(G.edges())
+        num_to_remove = int(len(total_edges) * 0.1)
+        failed_links = random.sample(total_edges, num_to_remove)
+        G.remove_edges_from(failed_links)
+        experiment_data["disabled_edges"] = failed_links
         experiment_data["edges"] = list(G.edges())
         for node in G.nodes():
             experiment_data["nodes"][node] = {
