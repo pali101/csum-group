@@ -1,0 +1,4160 @@
+{
+  "timestamp": "2025-05-04T18:20:26.132320",
+  "node_count": 81,
+  "update_rounds": 5,
+  "latency_model": "normal_15ms_std3",
+  "topology_type": "structured_9x9",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      72
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      73
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      18
+    ],
+    [
+      9,
+      17
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      2,
+      74
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      19
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      75
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      20
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      4,
+      76
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      21
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      5,
+      77
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      22
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      15
+    ],
+    [
+      6,
+      78
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      23
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      16
+    ],
+    [
+      7,
+      79
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      15,
+      24
+    ],
+    [
+      8,
+      17
+    ],
+    [
+      8,
+      80
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      16,
+      25
+    ],
+    [
+      17,
+      26
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      18,
+      27
+    ],
+    [
+      18,
+      26
+    ],
+    [
+      19,
+      20
+    ],
+    [
+      19,
+      28
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      20,
+      29
+    ],
+    [
+      21,
+      22
+    ],
+    [
+      21,
+      30
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      22,
+      31
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      23,
+      32
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      24,
+      33
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      25,
+      34
+    ],
+    [
+      26,
+      35
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      27,
+      36
+    ],
+    [
+      27,
+      35
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      28,
+      37
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      29,
+      38
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      30,
+      39
+    ],
+    [
+      31,
+      32
+    ],
+    [
+      31,
+      40
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      32,
+      41
+    ],
+    [
+      33,
+      34
+    ],
+    [
+      33,
+      42
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      34,
+      43
+    ],
+    [
+      35,
+      44
+    ],
+    [
+      36,
+      37
+    ],
+    [
+      36,
+      45
+    ],
+    [
+      36,
+      44
+    ],
+    [
+      37,
+      38
+    ],
+    [
+      37,
+      46
+    ],
+    [
+      38,
+      39
+    ],
+    [
+      38,
+      47
+    ],
+    [
+      39,
+      40
+    ],
+    [
+      39,
+      48
+    ],
+    [
+      40,
+      41
+    ],
+    [
+      40,
+      49
+    ],
+    [
+      41,
+      42
+    ],
+    [
+      41,
+      50
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      42,
+      51
+    ],
+    [
+      43,
+      44
+    ],
+    [
+      43,
+      52
+    ],
+    [
+      44,
+      53
+    ],
+    [
+      45,
+      46
+    ],
+    [
+      45,
+      54
+    ],
+    [
+      45,
+      53
+    ],
+    [
+      46,
+      47
+    ],
+    [
+      46,
+      55
+    ],
+    [
+      47,
+      48
+    ],
+    [
+      47,
+      56
+    ],
+    [
+      48,
+      49
+    ],
+    [
+      48,
+      57
+    ],
+    [
+      49,
+      50
+    ],
+    [
+      49,
+      58
+    ],
+    [
+      50,
+      51
+    ],
+    [
+      50,
+      59
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      51,
+      60
+    ],
+    [
+      52,
+      53
+    ],
+    [
+      52,
+      61
+    ],
+    [
+      53,
+      62
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      54,
+      63
+    ],
+    [
+      54,
+      62
+    ],
+    [
+      55,
+      56
+    ],
+    [
+      55,
+      64
+    ],
+    [
+      56,
+      57
+    ],
+    [
+      56,
+      65
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      57,
+      66
+    ],
+    [
+      58,
+      59
+    ],
+    [
+      58,
+      67
+    ],
+    [
+      59,
+      60
+    ],
+    [
+      59,
+      68
+    ],
+    [
+      60,
+      61
+    ],
+    [
+      60,
+      69
+    ],
+    [
+      61,
+      62
+    ],
+    [
+      61,
+      70
+    ],
+    [
+      62,
+      71
+    ],
+    [
+      63,
+      64
+    ],
+    [
+      63,
+      72
+    ],
+    [
+      63,
+      71
+    ],
+    [
+      64,
+      65
+    ],
+    [
+      64,
+      73
+    ],
+    [
+      65,
+      66
+    ],
+    [
+      65,
+      74
+    ],
+    [
+      66,
+      67
+    ],
+    [
+      66,
+      75
+    ],
+    [
+      67,
+      68
+    ],
+    [
+      67,
+      76
+    ],
+    [
+      68,
+      69
+    ],
+    [
+      68,
+      77
+    ],
+    [
+      69,
+      70
+    ],
+    [
+      69,
+      78
+    ],
+    [
+      70,
+      71
+    ],
+    [
+      70,
+      79
+    ],
+    [
+      71,
+      80
+    ],
+    [
+      72,
+      73
+    ],
+    [
+      72,
+      80
+    ],
+    [
+      73,
+      74
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      75,
+      76
+    ],
+    [
+      76,
+      77
+    ],
+    [
+      77,
+      78
+    ],
+    [
+      78,
+      79
+    ],
+    [
+      79,
+      80
+    ]
+  ],
+  "nodes": {
+    "0": {
+      "neighbors": [
+        1,
+        9,
+        8,
+        72
+      ]
+    },
+    "1": {
+      "neighbors": [
+        0,
+        2,
+        10,
+        73
+      ]
+    },
+    "9": {
+      "neighbors": [
+        0,
+        10,
+        18,
+        17
+      ]
+    },
+    "2": {
+      "neighbors": [
+        1,
+        3,
+        11,
+        74
+      ]
+    },
+    "10": {
+      "neighbors": [
+        1,
+        9,
+        11,
+        19
+      ]
+    },
+    "3": {
+      "neighbors": [
+        2,
+        4,
+        12,
+        75
+      ]
+    },
+    "11": {
+      "neighbors": [
+        2,
+        10,
+        12,
+        20
+      ]
+    },
+    "4": {
+      "neighbors": [
+        3,
+        5,
+        13,
+        76
+      ]
+    },
+    "12": {
+      "neighbors": [
+        3,
+        11,
+        13,
+        21
+      ]
+    },
+    "5": {
+      "neighbors": [
+        4,
+        6,
+        14,
+        77
+      ]
+    },
+    "13": {
+      "neighbors": [
+        4,
+        12,
+        14,
+        22
+      ]
+    },
+    "6": {
+      "neighbors": [
+        5,
+        7,
+        15,
+        78
+      ]
+    },
+    "14": {
+      "neighbors": [
+        5,
+        13,
+        15,
+        23
+      ]
+    },
+    "7": {
+      "neighbors": [
+        6,
+        8,
+        16,
+        79
+      ]
+    },
+    "15": {
+      "neighbors": [
+        6,
+        14,
+        16,
+        24
+      ]
+    },
+    "8": {
+      "neighbors": [
+        7,
+        0,
+        17,
+        80
+      ]
+    },
+    "16": {
+      "neighbors": [
+        7,
+        15,
+        17,
+        25
+      ]
+    },
+    "17": {
+      "neighbors": [
+        8,
+        16,
+        9,
+        26
+      ]
+    },
+    "18": {
+      "neighbors": [
+        9,
+        19,
+        27,
+        26
+      ]
+    },
+    "19": {
+      "neighbors": [
+        10,
+        18,
+        20,
+        28
+      ]
+    },
+    "20": {
+      "neighbors": [
+        11,
+        19,
+        21,
+        29
+      ]
+    },
+    "21": {
+      "neighbors": [
+        12,
+        20,
+        22,
+        30
+      ]
+    },
+    "22": {
+      "neighbors": [
+        13,
+        21,
+        23,
+        31
+      ]
+    },
+    "23": {
+      "neighbors": [
+        14,
+        22,
+        24,
+        32
+      ]
+    },
+    "24": {
+      "neighbors": [
+        15,
+        23,
+        25,
+        33
+      ]
+    },
+    "25": {
+      "neighbors": [
+        16,
+        24,
+        26,
+        34
+      ]
+    },
+    "26": {
+      "neighbors": [
+        17,
+        25,
+        18,
+        35
+      ]
+    },
+    "27": {
+      "neighbors": [
+        18,
+        28,
+        36,
+        35
+      ]
+    },
+    "28": {
+      "neighbors": [
+        19,
+        27,
+        29,
+        37
+      ]
+    },
+    "29": {
+      "neighbors": [
+        20,
+        28,
+        30,
+        38
+      ]
+    },
+    "30": {
+      "neighbors": [
+        21,
+        29,
+        31,
+        39
+      ]
+    },
+    "31": {
+      "neighbors": [
+        22,
+        30,
+        32,
+        40
+      ]
+    },
+    "32": {
+      "neighbors": [
+        23,
+        31,
+        33,
+        41
+      ]
+    },
+    "33": {
+      "neighbors": [
+        24,
+        32,
+        34,
+        42
+      ]
+    },
+    "34": {
+      "neighbors": [
+        25,
+        33,
+        35,
+        43
+      ]
+    },
+    "35": {
+      "neighbors": [
+        26,
+        34,
+        27,
+        44
+      ]
+    },
+    "36": {
+      "neighbors": [
+        27,
+        37,
+        45,
+        44
+      ]
+    },
+    "37": {
+      "neighbors": [
+        28,
+        36,
+        38,
+        46
+      ]
+    },
+    "38": {
+      "neighbors": [
+        29,
+        37,
+        39,
+        47
+      ]
+    },
+    "39": {
+      "neighbors": [
+        30,
+        38,
+        40,
+        48
+      ]
+    },
+    "40": {
+      "neighbors": [
+        31,
+        39,
+        41,
+        49
+      ]
+    },
+    "41": {
+      "neighbors": [
+        32,
+        40,
+        42,
+        50
+      ]
+    },
+    "42": {
+      "neighbors": [
+        33,
+        41,
+        43,
+        51
+      ]
+    },
+    "43": {
+      "neighbors": [
+        34,
+        42,
+        44,
+        52
+      ]
+    },
+    "44": {
+      "neighbors": [
+        35,
+        43,
+        36,
+        53
+      ]
+    },
+    "45": {
+      "neighbors": [
+        36,
+        46,
+        54,
+        53
+      ]
+    },
+    "46": {
+      "neighbors": [
+        37,
+        45,
+        47,
+        55
+      ]
+    },
+    "47": {
+      "neighbors": [
+        38,
+        46,
+        48,
+        56
+      ]
+    },
+    "48": {
+      "neighbors": [
+        39,
+        47,
+        49,
+        57
+      ]
+    },
+    "49": {
+      "neighbors": [
+        40,
+        48,
+        50,
+        58
+      ]
+    },
+    "50": {
+      "neighbors": [
+        41,
+        49,
+        51,
+        59
+      ]
+    },
+    "51": {
+      "neighbors": [
+        42,
+        50,
+        52,
+        60
+      ]
+    },
+    "52": {
+      "neighbors": [
+        43,
+        51,
+        53,
+        61
+      ]
+    },
+    "53": {
+      "neighbors": [
+        44,
+        52,
+        45,
+        62
+      ]
+    },
+    "54": {
+      "neighbors": [
+        45,
+        55,
+        63,
+        62
+      ]
+    },
+    "55": {
+      "neighbors": [
+        46,
+        54,
+        56,
+        64
+      ]
+    },
+    "56": {
+      "neighbors": [
+        47,
+        55,
+        57,
+        65
+      ]
+    },
+    "57": {
+      "neighbors": [
+        48,
+        56,
+        58,
+        66
+      ]
+    },
+    "58": {
+      "neighbors": [
+        49,
+        57,
+        59,
+        67
+      ]
+    },
+    "59": {
+      "neighbors": [
+        50,
+        58,
+        60,
+        68
+      ]
+    },
+    "60": {
+      "neighbors": [
+        51,
+        59,
+        61,
+        69
+      ]
+    },
+    "61": {
+      "neighbors": [
+        52,
+        60,
+        62,
+        70
+      ]
+    },
+    "62": {
+      "neighbors": [
+        53,
+        61,
+        54,
+        71
+      ]
+    },
+    "63": {
+      "neighbors": [
+        54,
+        64,
+        72,
+        71
+      ]
+    },
+    "64": {
+      "neighbors": [
+        55,
+        63,
+        65,
+        73
+      ]
+    },
+    "65": {
+      "neighbors": [
+        56,
+        64,
+        66,
+        74
+      ]
+    },
+    "66": {
+      "neighbors": [
+        57,
+        65,
+        67,
+        75
+      ]
+    },
+    "67": {
+      "neighbors": [
+        58,
+        66,
+        68,
+        76
+      ]
+    },
+    "68": {
+      "neighbors": [
+        59,
+        67,
+        69,
+        77
+      ]
+    },
+    "69": {
+      "neighbors": [
+        60,
+        68,
+        70,
+        78
+      ]
+    },
+    "70": {
+      "neighbors": [
+        61,
+        69,
+        71,
+        79
+      ]
+    },
+    "71": {
+      "neighbors": [
+        62,
+        70,
+        63,
+        80
+      ]
+    },
+    "72": {
+      "neighbors": [
+        63,
+        73,
+        0,
+        80
+      ]
+    },
+    "73": {
+      "neighbors": [
+        64,
+        72,
+        74,
+        1
+      ]
+    },
+    "74": {
+      "neighbors": [
+        65,
+        73,
+        75,
+        2
+      ]
+    },
+    "75": {
+      "neighbors": [
+        66,
+        74,
+        76,
+        3
+      ]
+    },
+    "76": {
+      "neighbors": [
+        67,
+        75,
+        77,
+        4
+      ]
+    },
+    "77": {
+      "neighbors": [
+        68,
+        76,
+        78,
+        5
+      ]
+    },
+    "78": {
+      "neighbors": [
+        69,
+        77,
+        79,
+        6
+      ]
+    },
+    "79": {
+      "neighbors": [
+        70,
+        78,
+        80,
+        7
+      ]
+    },
+    "80": {
+      "neighbors": [
+        71,
+        79,
+        72,
+        8
+      ]
+    }
+  },
+  "events": [
+    {
+      "timestamp": 1746363026.132762,
+      "sender": "GS",
+      "receiver": 243,
+      "latency": 10560.194438915363,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1328707,
+      "sender": "GS",
+      "receiver": 244,
+      "latency": 44903.23660874131,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1329265,
+      "sender": "GS",
+      "receiver": 245,
+      "latency": 34865.134985757795,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.132965,
+      "sender": "GS",
+      "receiver": 246,
+      "latency": 40732.88404150059,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1330054,
+      "sender": "GS",
+      "receiver": 247,
+      "latency": 65075.30696211365,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1330605,
+      "sender": "GS",
+      "receiver": 248,
+      "latency": 57538.5680554813,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.133164,
+      "sender": "GS",
+      "receiver": 249,
+      "latency": 31656.895727072373,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1332514,
+      "sender": "GS",
+      "receiver": 250,
+      "latency": 83140.03614026672,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1333072,
+      "sender": "GS",
+      "receiver": 251,
+      "latency": 45384.2419410741,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1333652,
+      "sender": "GS",
+      "receiver": 252,
+      "latency": 4140.214570574678,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1335285,
+      "sender": "GS",
+      "receiver": 253,
+      "latency": 67048.79173005883,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1336117,
+      "sender": "GS",
+      "receiver": 254,
+      "latency": 47032.216625023735,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1336644,
+      "sender": "GS",
+      "receiver": 255,
+      "latency": 47464.3729805695,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1337185,
+      "sender": "GS",
+      "receiver": 256,
+      "latency": 46286.39069316394,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1337643,
+      "sender": "GS",
+      "receiver": 257,
+      "latency": 55207.42725947676,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1338897,
+      "sender": "GS",
+      "receiver": 258,
+      "latency": 76796.76603768893,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.133971,
+      "sender": "GS",
+      "receiver": 259,
+      "latency": 16413.92800910059,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1341238,
+      "sender": "GS",
+      "receiver": 260,
+      "latency": 37715.07085333114,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1342173,
+      "sender": "GS",
+      "receiver": 261,
+      "latency": 71183.26748913099,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1342623,
+      "sender": "GS",
+      "receiver": 262,
+      "latency": 78913.58288426413,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1343005,
+      "sender": "GS",
+      "receiver": 263,
+      "latency": 66561.99390701985,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1343765,
+      "sender": "GS",
+      "receiver": 264,
+      "latency": 33226.353958642234,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1344752,
+      "sender": "GS",
+      "receiver": 265,
+      "latency": 30520.350953980804,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.134638,
+      "sender": "GS",
+      "receiver": 266,
+      "latency": 69849.14322266984,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1347969,
+      "sender": "GS",
+      "receiver": 267,
+      "latency": 70123.04244759622,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1349256,
+      "sender": "GS",
+      "receiver": 268,
+      "latency": 18325.528771106623,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1350548,
+      "sender": "GS",
+      "receiver": 269,
+      "latency": 75468.77958113849,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1351926,
+      "sender": "GS",
+      "receiver": 270,
+      "latency": 81100.54061562789,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1352558,
+      "sender": "GS",
+      "receiver": 271,
+      "latency": 11420.241632370056,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1353238,
+      "sender": "GS",
+      "receiver": 272,
+      "latency": 83831.51227815314,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1354232,
+      "sender": "GS",
+      "receiver": 273,
+      "latency": 85542.09755204557,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1354842,
+      "sender": "GS",
+      "receiver": 274,
+      "latency": 45731.875946834865,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1355247,
+      "sender": "GS",
+      "receiver": 275,
+      "latency": 263.17504019130445,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.135565,
+      "sender": "GS",
+      "receiver": 276,
+      "latency": 35724.3244902566,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1356132,
+      "sender": "GS",
+      "receiver": 277,
+      "latency": 55139.273818688045,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1356528,
+      "sender": "GS",
+      "receiver": 278,
+      "latency": 44987.63294914221,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1356905,
+      "sender": "GS",
+      "receiver": 279,
+      "latency": 60311.5057967448,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1357281,
+      "sender": "GS",
+      "receiver": 280,
+      "latency": 56146.16496173879,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1357663,
+      "sender": "GS",
+      "receiver": 281,
+      "latency": 19173.118672127497,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1358044,
+      "sender": "GS",
+      "receiver": 282,
+      "latency": 18770.632682979256,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1359315,
+      "sender": "GS",
+      "receiver": 283,
+      "latency": 65406.8862886292,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.136026,
+      "sender": "GS",
+      "receiver": 284,
+      "latency": 41858.76823163498,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1361048,
+      "sender": "GS",
+      "receiver": 285,
+      "latency": 9083.230033470409,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1361897,
+      "sender": "GS",
+      "receiver": 286,
+      "latency": 12833.403910201056,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1362424,
+      "sender": "GS",
+      "receiver": 287,
+      "latency": 26778.673414601002,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1363292,
+      "sender": "GS",
+      "receiver": 288,
+      "latency": 74885.59590612297,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.136469,
+      "sender": "GS",
+      "receiver": 289,
+      "latency": 21614.91045849765,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.136583,
+      "sender": "GS",
+      "receiver": 290,
+      "latency": 28995.513456634282,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.136685,
+      "sender": "GS",
+      "receiver": 291,
+      "latency": 44017.75588345616,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1368022,
+      "sender": "GS",
+      "receiver": 292,
+      "latency": 2859.3957637456792,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1368673,
+      "sender": "GS",
+      "receiver": 293,
+      "latency": 80358.79443614323,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1369064,
+      "sender": "GS",
+      "receiver": 294,
+      "latency": 70785.44273828079,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.136947,
+      "sender": "GS",
+      "receiver": 295,
+      "latency": 2378.8659092707535,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1369886,
+      "sender": "GS",
+      "receiver": 296,
+      "latency": 55056.017447097845,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1370273,
+      "sender": "GS",
+      "receiver": 297,
+      "latency": 18247.047289785496,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1370652,
+      "sender": "GS",
+      "receiver": 298,
+      "latency": 23191.00270853343,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1371028,
+      "sender": "GS",
+      "receiver": 299,
+      "latency": 60819.85079590542,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1371517,
+      "sender": "GS",
+      "receiver": 300,
+      "latency": 20328.252030068837,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1371896,
+      "sender": "GS",
+      "receiver": 301,
+      "latency": 58362.70702351395,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.13723,
+      "sender": "GS",
+      "receiver": 302,
+      "latency": 64027.81053256112,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1372674,
+      "sender": "GS",
+      "receiver": 303,
+      "latency": 6595.496961145863,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1373048,
+      "sender": "GS",
+      "receiver": 304,
+      "latency": 6679.973637664793,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1373415,
+      "sender": "GS",
+      "receiver": 305,
+      "latency": 35331.4133614339,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1373942,
+      "sender": "GS",
+      "receiver": 306,
+      "latency": 44169.3699272825,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.13743,
+      "sender": "GS",
+      "receiver": 307,
+      "latency": 43617.14881532608,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1374674,
+      "sender": "GS",
+      "receiver": 308,
+      "latency": 61927.823649118196,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.137505,
+      "sender": "GS",
+      "receiver": 309,
+      "latency": 27617.227004148448,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1375456,
+      "sender": "GS",
+      "receiver": 310,
+      "latency": 69505.67447777766,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1375813,
+      "sender": "GS",
+      "receiver": 311,
+      "latency": 27347.989788228082,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.137622,
+      "sender": "GS",
+      "receiver": 312,
+      "latency": 18122.331703556018,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.137658,
+      "sender": "GS",
+      "receiver": 313,
+      "latency": 6823.174124120305,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1376944,
+      "sender": "GS",
+      "receiver": 314,
+      "latency": 6390.337092442091,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1377308,
+      "sender": "GS",
+      "receiver": 315,
+      "latency": 23315.46956001474,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.137767,
+      "sender": "GS",
+      "receiver": 316,
+      "latency": 39579.93146587664,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1378026,
+      "sender": "GS",
+      "receiver": 317,
+      "latency": 23323.02157532378,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.137853,
+      "sender": "GS",
+      "receiver": 318,
+      "latency": 86096.30687067336,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1378896,
+      "sender": "GS",
+      "receiver": 319,
+      "latency": 68031.24730157354,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1379297,
+      "sender": "GS",
+      "receiver": 320,
+      "latency": 13912.832877299676,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1379843,
+      "sender": "GS",
+      "receiver": 321,
+      "latency": 85372.49601537372,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1380236,
+      "sender": "GS",
+      "receiver": 322,
+      "latency": 7315.916946165064,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1380613,
+      "sender": "GS",
+      "receiver": 323,
+      "latency": 1327.5629269936603,
+      "version": "1.4"
+    },
+    {
+      "timestamp": 1746363026.1381123,
+      "sender": "GS",
+      "receiver": 243,
+      "latency": 22126.38318055375,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1381483,
+      "sender": "GS",
+      "receiver": 244,
+      "latency": 31220.46669165323,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1381845,
+      "sender": "GS",
+      "receiver": 245,
+      "latency": 68849.00255062735,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1382203,
+      "sender": "GS",
+      "receiver": 246,
+      "latency": 3162.508498079171,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1382556,
+      "sender": "GS",
+      "receiver": 247,
+      "latency": 28285.03331842544,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.138291,
+      "sender": "GS",
+      "receiver": 248,
+      "latency": 68128.4860896137,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1383266,
+      "sender": "GS",
+      "receiver": 249,
+      "latency": 53050.50674583077,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1383626,
+      "sender": "GS",
+      "receiver": 250,
+      "latency": 16735.41831590871,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1383982,
+      "sender": "GS",
+      "receiver": 251,
+      "latency": 1400.6640866674788,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1384335,
+      "sender": "GS",
+      "receiver": 252,
+      "latency": 75698.64113269701,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1384716,
+      "sender": "GS",
+      "receiver": 253,
+      "latency": 44440.932886855844,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1385067,
+      "sender": "GS",
+      "receiver": 254,
+      "latency": 29308.299212294674,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1385431,
+      "sender": "GS",
+      "receiver": 255,
+      "latency": 45005.665808809514,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1385787,
+      "sender": "GS",
+      "receiver": 256,
+      "latency": 41554.20547350127,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1386137,
+      "sender": "GS",
+      "receiver": 257,
+      "latency": 56654.49725813799,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1386492,
+      "sender": "GS",
+      "receiver": 258,
+      "latency": 83396.11048005424,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1386852,
+      "sender": "GS",
+      "receiver": 259,
+      "latency": 51444.20993413505,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1387208,
+      "sender": "GS",
+      "receiver": 260,
+      "latency": 10718.567073563721,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.138756,
+      "sender": "GS",
+      "receiver": 261,
+      "latency": 39983.522454040176,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1387916,
+      "sender": "GS",
+      "receiver": 262,
+      "latency": 2503.4577314281296,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1388445,
+      "sender": "GS",
+      "receiver": 263,
+      "latency": 2652.21928788568,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1388836,
+      "sender": "GS",
+      "receiver": 264,
+      "latency": 31013.056171693534,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1389198,
+      "sender": "GS",
+      "receiver": 265,
+      "latency": 43085.26477053592,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.138956,
+      "sender": "GS",
+      "receiver": 266,
+      "latency": 22185.67382685385,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1389916,
+      "sender": "GS",
+      "receiver": 267,
+      "latency": 27069.87636758084,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1390266,
+      "sender": "GS",
+      "receiver": 268,
+      "latency": 76314.2944338288,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.139063,
+      "sender": "GS",
+      "receiver": 269,
+      "latency": 77294.97843069323,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1390982,
+      "sender": "GS",
+      "receiver": 270,
+      "latency": 73127.77890205702,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1391342,
+      "sender": "GS",
+      "receiver": 271,
+      "latency": 30922.235893411613,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1391704,
+      "sender": "GS",
+      "receiver": 272,
+      "latency": 14213.950394014597,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1392055,
+      "sender": "GS",
+      "receiver": 273,
+      "latency": 45955.38549780188,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1392405,
+      "sender": "GS",
+      "receiver": 274,
+      "latency": 36232.159734763554,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1392834,
+      "sender": "GS",
+      "receiver": 275,
+      "latency": 37938.46887226218,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1393185,
+      "sender": "GS",
+      "receiver": 276,
+      "latency": 44873.912312261324,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1393542,
+      "sender": "GS",
+      "receiver": 277,
+      "latency": 15724.625255369381,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1393893,
+      "sender": "GS",
+      "receiver": 278,
+      "latency": 56336.392894016615,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1394248,
+      "sender": "GS",
+      "receiver": 279,
+      "latency": 72676.2231150926,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1394608,
+      "sender": "GS",
+      "receiver": 280,
+      "latency": 15531.10036080904,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.139496,
+      "sender": "GS",
+      "receiver": 281,
+      "latency": 11890.974673631477,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1395316,
+      "sender": "GS",
+      "receiver": 282,
+      "latency": 16582.96195139058,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1395712,
+      "sender": "GS",
+      "receiver": 283,
+      "latency": 7427.80902299061,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.139609,
+      "sender": "GS",
+      "receiver": 284,
+      "latency": 281.6125795135322,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1396444,
+      "sender": "GS",
+      "receiver": 285,
+      "latency": 5423.459355076622,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1396863,
+      "sender": "GS",
+      "receiver": 286,
+      "latency": 22606.171038989964,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1397223,
+      "sender": "GS",
+      "receiver": 287,
+      "latency": 24797.894806607488,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.139758,
+      "sender": "GS",
+      "receiver": 288,
+      "latency": 52693.17091976849,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1397934,
+      "sender": "GS",
+      "receiver": 289,
+      "latency": 32937.83036930609,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1398406,
+      "sender": "GS",
+      "receiver": 290,
+      "latency": 25056.502083149622,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1398802,
+      "sender": "GS",
+      "receiver": 291,
+      "latency": 77228.57330073426,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1399603,
+      "sender": "GS",
+      "receiver": 292,
+      "latency": 17891.37630650882,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1400225,
+      "sender": "GS",
+      "receiver": 293,
+      "latency": 53931.389740189676,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140067,
+      "sender": "GS",
+      "receiver": 294,
+      "latency": 85562.45497393857,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140128,
+      "sender": "GS",
+      "receiver": 295,
+      "latency": 21464.71638865641,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140187,
+      "sender": "GS",
+      "receiver": 296,
+      "latency": 65352.289314267466,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1402268,
+      "sender": "GS",
+      "receiver": 297,
+      "latency": 52178.489566124044,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1402647,
+      "sender": "GS",
+      "receiver": 298,
+      "latency": 85937.19598320803,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140305,
+      "sender": "GS",
+      "receiver": 299,
+      "latency": 76195.1503337053,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1403964,
+      "sender": "GS",
+      "receiver": 300,
+      "latency": 46328.24008406308,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1404457,
+      "sender": "GS",
+      "receiver": 301,
+      "latency": 80001.48384181439,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140492,
+      "sender": "GS",
+      "receiver": 302,
+      "latency": 72572.33061601923,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.14053,
+      "sender": "GS",
+      "receiver": 303,
+      "latency": 36755.03110859118,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.14057,
+      "sender": "GS",
+      "receiver": 304,
+      "latency": 85662.50711158513,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1406097,
+      "sender": "GS",
+      "receiver": 305,
+      "latency": 30215.08196893678,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1406484,
+      "sender": "GS",
+      "receiver": 306,
+      "latency": 20849.158625578235,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.14069,
+      "sender": "GS",
+      "receiver": 307,
+      "latency": 8521.666449199487,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1407275,
+      "sender": "GS",
+      "receiver": 308,
+      "latency": 48827.76923423372,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1407661,
+      "sender": "GS",
+      "receiver": 309,
+      "latency": 6173.975105779507,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140844,
+      "sender": "GS",
+      "receiver": 310,
+      "latency": 70804.38246249806,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140898,
+      "sender": "GS",
+      "receiver": 311,
+      "latency": 86262.25656945704,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.140935,
+      "sender": "GS",
+      "receiver": 312,
+      "latency": 29924.67877004545,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1409738,
+      "sender": "GS",
+      "receiver": 313,
+      "latency": 30932.441320925172,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1410103,
+      "sender": "GS",
+      "receiver": 314,
+      "latency": 32678.68032907818,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1410468,
+      "sender": "GS",
+      "receiver": 315,
+      "latency": 12659.75944728683,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.141082,
+      "sender": "GS",
+      "receiver": 316,
+      "latency": 1746.7628627567517,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1411173,
+      "sender": "GS",
+      "receiver": 317,
+      "latency": 15818.47080446072,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.141153,
+      "sender": "GS",
+      "receiver": 318,
+      "latency": 39988.30529379626,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1411886,
+      "sender": "GS",
+      "receiver": 319,
+      "latency": 22619.142018471244,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.14123,
+      "sender": "GS",
+      "receiver": 320,
+      "latency": 451.3705141426238,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.141266,
+      "sender": "GS",
+      "receiver": 321,
+      "latency": 7472.499711468562,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.1413136,
+      "sender": "GS",
+      "receiver": 322,
+      "latency": 77443.14493477505,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.14135,
+      "sender": "GS",
+      "receiver": 323,
+      "latency": 73559.26541321255,
+      "version": "1.5"
+    },
+    {
+      "timestamp": 1746363026.141406,
+      "sender": "GS",
+      "receiver": 243,
+      "latency": 35405.69217823679,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1414435,
+      "sender": "GS",
+      "receiver": 244,
+      "latency": 72697.91814536678,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1414814,
+      "sender": "GS",
+      "receiver": 245,
+      "latency": 74705.47529611998,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1415224,
+      "sender": "GS",
+      "receiver": 246,
+      "latency": 42478.339776142784,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1415591,
+      "sender": "GS",
+      "receiver": 247,
+      "latency": 20595.804646726705,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.141598,
+      "sender": "GS",
+      "receiver": 248,
+      "latency": 16861.689690465944,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1416414,
+      "sender": "GS",
+      "receiver": 249,
+      "latency": 48446.760703487125,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1416783,
+      "sender": "GS",
+      "receiver": 250,
+      "latency": 37937.571822162856,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1417232,
+      "sender": "GS",
+      "receiver": 251,
+      "latency": 67689.36144946805,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1417592,
+      "sender": "GS",
+      "receiver": 252,
+      "latency": 50912.1208477184,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1417959,
+      "sender": "GS",
+      "receiver": 253,
+      "latency": 21827.64199834394,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1418483,
+      "sender": "GS",
+      "receiver": 254,
+      "latency": 3853.780839580107,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.141887,
+      "sender": "GS",
+      "receiver": 255,
+      "latency": 49704.77950226528,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1419258,
+      "sender": "GS",
+      "receiver": 256,
+      "latency": 50726.17833281655,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1419625,
+      "sender": "GS",
+      "receiver": 257,
+      "latency": 41972.5249950215,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1419997,
+      "sender": "GS",
+      "receiver": 258,
+      "latency": 46159.62875145085,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142044,
+      "sender": "GS",
+      "receiver": 259,
+      "latency": 28444.3998739817,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1420841,
+      "sender": "GS",
+      "receiver": 260,
+      "latency": 53416.16337935615,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1421268,
+      "sender": "GS",
+      "receiver": 261,
+      "latency": 72982.63773042193,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142164,
+      "sender": "GS",
+      "receiver": 262,
+      "latency": 17386.151432139417,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1422012,
+      "sender": "GS",
+      "receiver": 263,
+      "latency": 19236.01585843163,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142239,
+      "sender": "GS",
+      "receiver": 264,
+      "latency": 6799.608207786984,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1422777,
+      "sender": "GS",
+      "receiver": 265,
+      "latency": 47483.85345860754,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1423151,
+      "sender": "GS",
+      "receiver": 266,
+      "latency": 23012.54821029661,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1423519,
+      "sender": "GS",
+      "receiver": 267,
+      "latency": 31087.82575501339,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1423876,
+      "sender": "GS",
+      "receiver": 268,
+      "latency": 912.7590838726484,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142424,
+      "sender": "GS",
+      "receiver": 269,
+      "latency": 53793.34788437542,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142469,
+      "sender": "GS",
+      "receiver": 270,
+      "latency": 54653.86840346189,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1425066,
+      "sender": "GS",
+      "receiver": 271,
+      "latency": 47790.29155576242,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1425562,
+      "sender": "GS",
+      "receiver": 272,
+      "latency": 85657.54723418693,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1425946,
+      "sender": "GS",
+      "receiver": 273,
+      "latency": 22362.274901260185,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1426332,
+      "sender": "GS",
+      "receiver": 274,
+      "latency": 77955.49499114977,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1426723,
+      "sender": "GS",
+      "receiver": 275,
+      "latency": 50655.62895782531,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1427102,
+      "sender": "GS",
+      "receiver": 276,
+      "latency": 46316.07397165434,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1427479,
+      "sender": "GS",
+      "receiver": 277,
+      "latency": 65155.82313234424,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142787,
+      "sender": "GS",
+      "receiver": 278,
+      "latency": 33435.861355363806,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1428363,
+      "sender": "GS",
+      "receiver": 279,
+      "latency": 59521.2953714183,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1428788,
+      "sender": "GS",
+      "receiver": 280,
+      "latency": 53286.10002110314,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1429155,
+      "sender": "GS",
+      "receiver": 281,
+      "latency": 54166.96371401045,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1429584,
+      "sender": "GS",
+      "receiver": 282,
+      "latency": 54870.45859214352,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.142996,
+      "sender": "GS",
+      "receiver": 283,
+      "latency": 60855.596315781804,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1430328,
+      "sender": "GS",
+      "receiver": 284,
+      "latency": 69333.89221461552,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1430695,
+      "sender": "GS",
+      "receiver": 285,
+      "latency": 17990.455844115975,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1431067,
+      "sender": "GS",
+      "receiver": 286,
+      "latency": 82883.20815416116,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1431437,
+      "sender": "GS",
+      "receiver": 287,
+      "latency": 29134.649048738112,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1431808,
+      "sender": "GS",
+      "receiver": 288,
+      "latency": 13663.36343362942,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1432168,
+      "sender": "GS",
+      "receiver": 289,
+      "latency": 37682.813185280575,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1432528,
+      "sender": "GS",
+      "receiver": 290,
+      "latency": 66495.02939131566,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1432898,
+      "sender": "GS",
+      "receiver": 291,
+      "latency": 63102.526366150865,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1433253,
+      "sender": "GS",
+      "receiver": 292,
+      "latency": 25426.024013763137,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.143361,
+      "sender": "GS",
+      "receiver": 293,
+      "latency": 73374.81856930752,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1433966,
+      "sender": "GS",
+      "receiver": 294,
+      "latency": 52820.961540039905,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1434321,
+      "sender": "GS",
+      "receiver": 295,
+      "latency": 31946.856047745216,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1434677,
+      "sender": "GS",
+      "receiver": 296,
+      "latency": 44025.03820514411,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1435032,
+      "sender": "GS",
+      "receiver": 297,
+      "latency": 22184.714725740272,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1435387,
+      "sender": "GS",
+      "receiver": 298,
+      "latency": 7130.627206639614,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1435735,
+      "sender": "GS",
+      "receiver": 299,
+      "latency": 28234.469644553166,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1436088,
+      "sender": "GS",
+      "receiver": 300,
+      "latency": 21301.7077517337,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.143644,
+      "sender": "GS",
+      "receiver": 301,
+      "latency": 49260.9740634744,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.14368,
+      "sender": "GS",
+      "receiver": 302,
+      "latency": 49455.66145384459,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1437154,
+      "sender": "GS",
+      "receiver": 303,
+      "latency": 84196.31002347768,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.143751,
+      "sender": "GS",
+      "receiver": 304,
+      "latency": 22638.673379084783,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.143786,
+      "sender": "GS",
+      "receiver": 305,
+      "latency": 46995.68135593,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.143832,
+      "sender": "GS",
+      "receiver": 306,
+      "latency": 66690.42885152309,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1438696,
+      "sender": "GS",
+      "receiver": 307,
+      "latency": 26965.511794232807,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1439056,
+      "sender": "GS",
+      "receiver": 308,
+      "latency": 58987.6113490513,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1439412,
+      "sender": "GS",
+      "receiver": 309,
+      "latency": 62470.81439701998,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1439764,
+      "sender": "GS",
+      "receiver": 310,
+      "latency": 61103.51620707095,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1440115,
+      "sender": "GS",
+      "receiver": 311,
+      "latency": 10125.796783313946,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1440465,
+      "sender": "GS",
+      "receiver": 312,
+      "latency": 70316.00271070185,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1440816,
+      "sender": "GS",
+      "receiver": 313,
+      "latency": 68515.93702979376,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1441176,
+      "sender": "GS",
+      "receiver": 314,
+      "latency": 450.09465848007926,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1441529,
+      "sender": "GS",
+      "receiver": 315,
+      "latency": 29633.237940351733,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1441884,
+      "sender": "GS",
+      "receiver": 316,
+      "latency": 74842.4498571073,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.144224,
+      "sender": "GS",
+      "receiver": 317,
+      "latency": 82492.03977934572,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.14426,
+      "sender": "GS",
+      "receiver": 318,
+      "latency": 62153.764262889934,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1442955,
+      "sender": "GS",
+      "receiver": 319,
+      "latency": 60376.83438721143,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1443307,
+      "sender": "GS",
+      "receiver": 320,
+      "latency": 23214.709842454577,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1443658,
+      "sender": "GS",
+      "receiver": 321,
+      "latency": 79640.5300626212,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.144401,
+      "sender": "GS",
+      "receiver": 322,
+      "latency": 77942.00014257194,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1444361,
+      "sender": "GS",
+      "receiver": 323,
+      "latency": 64519.77039542953,
+      "version": "1.6"
+    },
+    {
+      "timestamp": 1746363026.1444826,
+      "sender": "GS",
+      "receiver": 243,
+      "latency": 82166.1746548248,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1445184,
+      "sender": "GS",
+      "receiver": 244,
+      "latency": 85554.26105400787,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1445537,
+      "sender": "GS",
+      "receiver": 245,
+      "latency": 34675.31982954131,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1445897,
+      "sender": "GS",
+      "receiver": 246,
+      "latency": 86311.67515649775,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1446254,
+      "sender": "GS",
+      "receiver": 247,
+      "latency": 9300.883536953148,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1446607,
+      "sender": "GS",
+      "receiver": 248,
+      "latency": 59445.8206169376,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.144696,
+      "sender": "GS",
+      "receiver": 249,
+      "latency": 50928.056905450154,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1447318,
+      "sender": "GS",
+      "receiver": 250,
+      "latency": 1993.625367461778,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1447673,
+      "sender": "GS",
+      "receiver": 251,
+      "latency": 53297.4000442877,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1448033,
+      "sender": "GS",
+      "receiver": 252,
+      "latency": 29821.772749614338,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.144855,
+      "sender": "GS",
+      "receiver": 253,
+      "latency": 51098.77320375602,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1448932,
+      "sender": "GS",
+      "receiver": 254,
+      "latency": 54317.003849746136,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1449296,
+      "sender": "GS",
+      "receiver": 255,
+      "latency": 48709.10979564095,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1449656,
+      "sender": "GS",
+      "receiver": 256,
+      "latency": 18224.707526333583,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1450014,
+      "sender": "GS",
+      "receiver": 257,
+      "latency": 13465.747668623233,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1450372,
+      "sender": "GS",
+      "receiver": 258,
+      "latency": 15288.814296067903,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145074,
+      "sender": "GS",
+      "receiver": 259,
+      "latency": 79469.76763478186,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1451106,
+      "sender": "GS",
+      "receiver": 260,
+      "latency": 54073.87510538795,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1451473,
+      "sender": "GS",
+      "receiver": 261,
+      "latency": 43763.44859376495,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1451833,
+      "sender": "GS",
+      "receiver": 262,
+      "latency": 51261.39206259029,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145219,
+      "sender": "GS",
+      "receiver": 263,
+      "latency": 71289.20975578227,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1452546,
+      "sender": "GS",
+      "receiver": 264,
+      "latency": 50554.935914537695,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1452913,
+      "sender": "GS",
+      "receiver": 265,
+      "latency": 52395.82370351897,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145327,
+      "sender": "GS",
+      "receiver": 266,
+      "latency": 66121.50910013642,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1453626,
+      "sender": "GS",
+      "receiver": 267,
+      "latency": 26515.924800390785,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145398,
+      "sender": "GS",
+      "receiver": 268,
+      "latency": 36130.09015462181,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1454346,
+      "sender": "GS",
+      "receiver": 269,
+      "latency": 16253.217190156758,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.14547,
+      "sender": "GS",
+      "receiver": 270,
+      "latency": 24122.018335905992,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1455052,
+      "sender": "GS",
+      "receiver": 271,
+      "latency": 4824.507715721936,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145541,
+      "sender": "GS",
+      "receiver": 272,
+      "latency": 42095.374233767805,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145576,
+      "sender": "GS",
+      "receiver": 273,
+      "latency": 42585.26400439433,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1456113,
+      "sender": "GS",
+      "receiver": 274,
+      "latency": 60259.578564834694,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1456559,
+      "sender": "GS",
+      "receiver": 275,
+      "latency": 18893.059674112883,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145692,
+      "sender": "GS",
+      "receiver": 276,
+      "latency": 55017.135214936905,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1457272,
+      "sender": "GS",
+      "receiver": 277,
+      "latency": 11892.426722171023,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1457624,
+      "sender": "GS",
+      "receiver": 278,
+      "latency": 64301.20704206094,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.145798,
+      "sender": "GS",
+      "receiver": 279,
+      "latency": 3456.419843947906,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1458442,
+      "sender": "GS",
+      "receiver": 280,
+      "latency": 4284.447839084616,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1458821,
+      "sender": "GS",
+      "receiver": 281,
+      "latency": 1204.0306640023155,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1459174,
+      "sender": "GS",
+      "receiver": 282,
+      "latency": 19158.713984829912,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1459525,
+      "sender": "GS",
+      "receiver": 283,
+      "latency": 14165.723346264345,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1459873,
+      "sender": "GS",
+      "receiver": 284,
+      "latency": 24875.660368776444,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1460226,
+      "sender": "GS",
+      "receiver": 285,
+      "latency": 1016.7407108801098,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1460578,
+      "sender": "GS",
+      "receiver": 286,
+      "latency": 729.0501807819284,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1460931,
+      "sender": "GS",
+      "receiver": 287,
+      "latency": 33756.78026458862,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146128,
+      "sender": "GS",
+      "receiver": 288,
+      "latency": 265.09401307168076,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1461632,
+      "sender": "GS",
+      "receiver": 289,
+      "latency": 63434.20722102055,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1461987,
+      "sender": "GS",
+      "receiver": 290,
+      "latency": 30890.592523488423,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146234,
+      "sender": "GS",
+      "receiver": 291,
+      "latency": 31506.098735778247,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1462698,
+      "sender": "GS",
+      "receiver": 292,
+      "latency": 28333.738422551294,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1463048,
+      "sender": "GS",
+      "receiver": 293,
+      "latency": 56162.779634334685,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1463401,
+      "sender": "GS",
+      "receiver": 294,
+      "latency": 59187.19098448061,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1463752,
+      "sender": "GS",
+      "receiver": 295,
+      "latency": 75351.70890871639,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1464107,
+      "sender": "GS",
+      "receiver": 296,
+      "latency": 46150.566672259214,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146446,
+      "sender": "GS",
+      "receiver": 297,
+      "latency": 23457.288648907528,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146481,
+      "sender": "GS",
+      "receiver": 298,
+      "latency": 77436.50856177542,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1465173,
+      "sender": "GS",
+      "receiver": 299,
+      "latency": 67287.12327494135,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1465528,
+      "sender": "GS",
+      "receiver": 300,
+      "latency": 50718.715160465414,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146588,
+      "sender": "GS",
+      "receiver": 301,
+      "latency": 78354.49863850855,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146623,
+      "sender": "GS",
+      "receiver": 302,
+      "latency": 56171.37065472422,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1466584,
+      "sender": "GS",
+      "receiver": 303,
+      "latency": 69840.069750082,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1466937,
+      "sender": "GS",
+      "receiver": 304,
+      "latency": 34189.66417190954,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1467288,
+      "sender": "GS",
+      "receiver": 305,
+      "latency": 75812.92520987982,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.146764,
+      "sender": "GS",
+      "receiver": 306,
+      "latency": 54062.30291359753,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1468,
+      "sender": "GS",
+      "receiver": 307,
+      "latency": 30645.064525834503,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1468468,
+      "sender": "GS",
+      "receiver": 308,
+      "latency": 35185.85445283699,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1468842,
+      "sender": "GS",
+      "receiver": 309,
+      "latency": 19352.626785162367,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1469202,
+      "sender": "GS",
+      "receiver": 310,
+      "latency": 49185.91636728168,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1469564,
+      "sender": "GS",
+      "receiver": 311,
+      "latency": 73666.47030012507,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1469924,
+      "sender": "GS",
+      "receiver": 312,
+      "latency": 8371.750804111212,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1470282,
+      "sender": "GS",
+      "receiver": 313,
+      "latency": 82592.7409445277,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1470635,
+      "sender": "GS",
+      "receiver": 314,
+      "latency": 33977.04018620498,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1471329,
+      "sender": "GS",
+      "receiver": 315,
+      "latency": 80055.14577133954,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.147211,
+      "sender": "GS",
+      "receiver": 316,
+      "latency": 77272.92538238222,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1472535,
+      "sender": "GS",
+      "receiver": 317,
+      "latency": 171.81281139721506,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1472902,
+      "sender": "GS",
+      "receiver": 318,
+      "latency": 56468.31524525837,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1473272,
+      "sender": "GS",
+      "receiver": 319,
+      "latency": 48552.150432311515,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1473646,
+      "sender": "GS",
+      "receiver": 320,
+      "latency": 72892.78395366989,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1474001,
+      "sender": "GS",
+      "receiver": 321,
+      "latency": 36531.26177143971,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1474361,
+      "sender": "GS",
+      "receiver": 322,
+      "latency": 57148.65145086527,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.1474717,
+      "sender": "GS",
+      "receiver": 323,
+      "latency": 26012.938932213772,
+      "version": "1.7"
+    },
+    {
+      "timestamp": 1746363026.147516,
+      "sender": "GS",
+      "receiver": 243,
+      "latency": 81857.2912914339,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1475523,
+      "sender": "GS",
+      "receiver": 244,
+      "latency": 30727.45981048549,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.147588,
+      "sender": "GS",
+      "receiver": 245,
+      "latency": 22143.030381094828,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1476235,
+      "sender": "GS",
+      "receiver": 246,
+      "latency": 70116.76461280797,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1476588,
+      "sender": "GS",
+      "receiver": 247,
+      "latency": 7661.588343951825,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1476939,
+      "sender": "GS",
+      "receiver": 248,
+      "latency": 37373.78052847273,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1477294,
+      "sender": "GS",
+      "receiver": 249,
+      "latency": 30436.36752293131,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1477652,
+      "sender": "GS",
+      "receiver": 250,
+      "latency": 78872.98141872082,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.147801,
+      "sender": "GS",
+      "receiver": 251,
+      "latency": 59439.29626121912,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1478474,
+      "sender": "GS",
+      "receiver": 252,
+      "latency": 8867.905240478478,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1479158,
+      "sender": "GS",
+      "receiver": 253,
+      "latency": 72666.1143647128,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1480162,
+      "sender": "GS",
+      "receiver": 254,
+      "latency": 38889.30968587939,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1481006,
+      "sender": "GS",
+      "receiver": 255,
+      "latency": 39982.53272158366,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.148182,
+      "sender": "GS",
+      "receiver": 256,
+      "latency": 35190.69489840962,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1482596,
+      "sender": "GS",
+      "receiver": 257,
+      "latency": 52874.26336968154,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1483352,
+      "sender": "GS",
+      "receiver": 258,
+      "latency": 74245.51298921209,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1483884,
+      "sender": "GS",
+      "receiver": 259,
+      "latency": 63740.612929831805,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1484268,
+      "sender": "GS",
+      "receiver": 260,
+      "latency": 2851.429519131068,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.148464,
+      "sender": "GS",
+      "receiver": 261,
+      "latency": 61436.38721062098,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1484997,
+      "sender": "GS",
+      "receiver": 262,
+      "latency": 34612.70547628568,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.148536,
+      "sender": "GS",
+      "receiver": 263,
+      "latency": 80673.81981994984,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1485791,
+      "sender": "GS",
+      "receiver": 264,
+      "latency": 78467.48429689705,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.148615,
+      "sender": "GS",
+      "receiver": 265,
+      "latency": 73513.99993079399,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1487086,
+      "sender": "GS",
+      "receiver": 266,
+      "latency": 44321.138966315986,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1488194,
+      "sender": "GS",
+      "receiver": 267,
+      "latency": 6649.701804179546,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1489213,
+      "sender": "GS",
+      "receiver": 268,
+      "latency": 82111.29102352998,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1490135,
+      "sender": "GS",
+      "receiver": 269,
+      "latency": 24385.2653557535,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1491199,
+      "sender": "GS",
+      "receiver": 270,
+      "latency": 65104.2418690174,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1492205,
+      "sender": "GS",
+      "receiver": 271,
+      "latency": 31877.10144900538,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.149334,
+      "sender": "GS",
+      "receiver": 272,
+      "latency": 58098.60101584011,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1494243,
+      "sender": "GS",
+      "receiver": 273,
+      "latency": 43900.5650963487,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1495478,
+      "sender": "GS",
+      "receiver": 274,
+      "latency": 18761.387858278922,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1496437,
+      "sender": "GS",
+      "receiver": 275,
+      "latency": 1502.6446168718219,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1497517,
+      "sender": "GS",
+      "receiver": 276,
+      "latency": 51622.974722575804,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1499257,
+      "sender": "GS",
+      "receiver": 277,
+      "latency": 53481.01623085317,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1500764,
+      "sender": "GS",
+      "receiver": 278,
+      "latency": 60715.468893077166,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1502373,
+      "sender": "GS",
+      "receiver": 279,
+      "latency": 724.2257196420202,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.150391,
+      "sender": "GS",
+      "receiver": 280,
+      "latency": 33200.53947469883,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1505406,
+      "sender": "GS",
+      "receiver": 281,
+      "latency": 72694.83770491608,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1507056,
+      "sender": "GS",
+      "receiver": 282,
+      "latency": 11917.5827336548,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1508834,
+      "sender": "GS",
+      "receiver": 283,
+      "latency": 27674.886338809647,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1510572,
+      "sender": "GS",
+      "receiver": 284,
+      "latency": 5610.480228265804,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1511965,
+      "sender": "GS",
+      "receiver": 285,
+      "latency": 11410.938596265787,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1513247,
+      "sender": "GS",
+      "receiver": 286,
+      "latency": 50074.14149628004,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.151486,
+      "sender": "GS",
+      "receiver": 287,
+      "latency": 22904.96847964504,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1516118,
+      "sender": "GS",
+      "receiver": 288,
+      "latency": 7297.596316630398,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1517286,
+      "sender": "GS",
+      "receiver": 289,
+      "latency": 27894.57963207973,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1518896,
+      "sender": "GS",
+      "receiver": 290,
+      "latency": 37984.586310708575,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.152005,
+      "sender": "GS",
+      "receiver": 291,
+      "latency": 59238.30423925981,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1521137,
+      "sender": "GS",
+      "receiver": 292,
+      "latency": 53140.42239507572,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.152229,
+      "sender": "GS",
+      "receiver": 293,
+      "latency": 79574.44285128474,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1523497,
+      "sender": "GS",
+      "receiver": 294,
+      "latency": 82542.18914228748,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.152465,
+      "sender": "GS",
+      "receiver": 295,
+      "latency": 53121.48328098305,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.152629,
+      "sender": "GS",
+      "receiver": 296,
+      "latency": 8230.099056591149,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1527505,
+      "sender": "GS",
+      "receiver": 297,
+      "latency": 36700.230476762685,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1528559,
+      "sender": "GS",
+      "receiver": 298,
+      "latency": 57100.51053961081,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1529198,
+      "sender": "GS",
+      "receiver": 299,
+      "latency": 35535.93526408936,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1529753,
+      "sender": "GS",
+      "receiver": 300,
+      "latency": 39139.80350840477,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1530387,
+      "sender": "GS",
+      "receiver": 301,
+      "latency": 29029.958023378207,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1530986,
+      "sender": "GS",
+      "receiver": 302,
+      "latency": 16608.820087566844,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.153187,
+      "sender": "GS",
+      "receiver": 303,
+      "latency": 84232.3014521524,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1533256,
+      "sender": "GS",
+      "receiver": 304,
+      "latency": 80922.2286405932,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1534176,
+      "sender": "GS",
+      "receiver": 305,
+      "latency": 83124.3673806721,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1534746,
+      "sender": "GS",
+      "receiver": 306,
+      "latency": 14586.048532512987,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.153536,
+      "sender": "GS",
+      "receiver": 307,
+      "latency": 57650.58078750468,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1535847,
+      "sender": "GS",
+      "receiver": 308,
+      "latency": 52053.23737034259,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1536329,
+      "sender": "GS",
+      "receiver": 309,
+      "latency": 62362.00104430236,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1537073,
+      "sender": "GS",
+      "receiver": 310,
+      "latency": 31402.680671483435,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1537955,
+      "sender": "GS",
+      "receiver": 311,
+      "latency": 59877.029343894006,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1539075,
+      "sender": "GS",
+      "receiver": 312,
+      "latency": 33176.98197243039,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.153975,
+      "sender": "GS",
+      "receiver": 313,
+      "latency": 6149.35831597312,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.154072,
+      "sender": "GS",
+      "receiver": 314,
+      "latency": 21397.249971158446,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1541328,
+      "sender": "GS",
+      "receiver": 315,
+      "latency": 68771.59904522488,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1541746,
+      "sender": "GS",
+      "receiver": 316,
+      "latency": 58048.88220450566,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1542141,
+      "sender": "GS",
+      "receiver": 317,
+      "latency": 33720.67760161972,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1542559,
+      "sender": "GS",
+      "receiver": 318,
+      "latency": 80446.63221649796,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1543107,
+      "sender": "GS",
+      "receiver": 319,
+      "latency": 20380.37749760002,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.154385,
+      "sender": "GS",
+      "receiver": 320,
+      "latency": 60184.53628314435,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.154436,
+      "sender": "GS",
+      "receiver": 321,
+      "latency": 34604.41667188102,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1545072,
+      "sender": "GS",
+      "receiver": 322,
+      "latency": 6006.196204703701,
+      "version": "1.8"
+    },
+    {
+      "timestamp": 1746363026.1545632,
+      "sender": "GS",
+      "receiver": 323,
+      "latency": 68000.61261454617,
+      "version": "1.8"
+    }
+  ],
+  "successful_nodes_per_round": [
+    81,
+    81,
+    81,
+    81,
+    81
+  ],
+  "start_time": 1746363026.132601,
+  "end_time": 1746363026.1545703,
+  "avg_propagation_time": 42699.77559823302,
+  "max_propagation_time": 86311.67515649775,
+  "unreachable_percent": 0.0,
+  "avg_retries_per_event": null,
+  "max_retries": null,
+  "packet_drop_rate": null,
+  "redundant_transmissions": null
+}
