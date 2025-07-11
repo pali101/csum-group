@@ -8,7 +8,7 @@ Accepted at *50th IEEE Conference on Local Computer Networks (LCN 2025)*
 
 This repository contains the code, experiments, and data for CSUM-Group, a secure, efficient software update propagation protocol for CubeSat clusters. CSUM-Group leverages HMAC-based authentication, hashchains, and cluster-wide broadcast authentication to provide resilient, scalable software updates under realistic network conditions (latency, link failures, malicious attempts).
 
-The implementation and experiments support the findings presented in our LCN 2025 short paper.
+The implementation and experiments support the findings presented in our LCN 2025 paper.
 
 ## Directory Structure
 
