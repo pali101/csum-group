@@ -1,10 +1,8 @@
 # CSUM-G: Group Software Updates for CubeSat Clusters
 
-Authors: Ankit Gangwal, Aashish Paliwal
-
-Affiliation: CSTAR, IIIT Hyderabad
-
-Short Paper - Accepted at *50th IEEE Conference on Local Computer Networks*
+Authors: Ankit Gangwal, Aashish Paliwal<br>
+Affiliation: CSTAR, IIIT Hyderabad<br>
+Accepted at *50th IEEE Conference on Local Computer Networks (LCN 2025)*
 
 ## Overview
 
@@ -38,6 +36,6 @@ pip install -r requirements.txt
 
 ### How to cite
 
-Ankit Gangwal, Aashish Paliwal.  
-**CSUM-G: Group Software Updates for CubeSat Clusters.**  
-*To appear in Proceedings of the 50th IEEE Conference on Local Computer Networks (IEEE LCN 2025), Sydney, Australia, October 14-16, 2025.*
+Ankit Gangwal, Aashish Paliwal.<br>
+**CSUM-G: Group Software Updates for CubeSat Clusters.**<br>
+*In Proceedings of the 50th IEEE Conference on Local Computer Networks (IEEE LCN 2025), pp. 1-9, Sydney, Australia, October 14-16, 2025.*
